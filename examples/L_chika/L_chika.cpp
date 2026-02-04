@@ -1,22 +1,22 @@
 #include <Arduino.h>
 
-int l_26 = 26;
-int l_12 = 12;
+#define PIN_LED12 12
+#define PIN_LED26 26
 
 void setup()
 {
   Serial.begin(9600);
-  pinMode(l_12, OUTPUT);
-  pinMode(l_26, OUTPUT);
+  pinMode(PIN_LED12, OUTPUT);
+  pinMode(PIN_LED26, OUTPUT);
 }
 
 void loop()
 {
   // Serial.println("Hello, World!!");
-  digitalWrite(l_12, HIGH);
-  digitalWrite(l_26, LOW);
+  digitalWrite(PIN_LED12, HIGH);
+  digitalWrite(PIN_LED26, LOW);
   delay(500);
-  digitalWrite(l_12, LOW);
-  digitalWrite(l_26, HIGH);
+  digitalWrite(PIN_LED12, LOW);
+  digitalWrite(PIN_LED26, HIGH);
   delay(500);
 }
