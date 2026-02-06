@@ -1,3 +1,6 @@
+// ESP32とスマートフォンをBLEで接続する例
+// スマホ側は「nRF Connect」というアプリを用いて接続している
+
 #include <Arduino.h>
 #include <BLEDevice.h>
 #include <BLEServer.h>
